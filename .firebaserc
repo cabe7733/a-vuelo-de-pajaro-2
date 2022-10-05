@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "a-vuelo-de-pajaro"
+  },
+  "targets": {
+    "a-vuelo-de-pajaro": {
+      "hosting": {
+        "blog": [
+          "a-vuelo-de-pajaro"
+        ]
+      }
+    }
+  }
+}

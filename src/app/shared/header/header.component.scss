@@ -1,0 +1,42 @@
+.title-ong h1 {
+    font-size: 5em;
+    background: linear-gradient( to right, rgba(0, 0, 0, 0.1%), rgba(0, 0, 0, 0.1%)), linear-gradient( to right, rgba(29, 210, 177, 1), rgba(27, 74, 161, 1));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.title-ong:hover h1 {
+    background-size: 0 3px, 100% 3px;
+    cursor: pointer;
+}
+
+.bg-image {
+    animation: sliding-background 40s linear infinite;
+    background: url("https://images.unsplash.com/photo-1452697620382-f6543ead73b5") no-repeat left / 120%;
+    height: 100vh;
+    text-align: center;
+}
+
+.card-description {
+    margin-top: -5em;
+    z-index: 999;
+    position: relative;
+}
+
+@keyframes sliding-background {
+    0%,
+    100% {
+        background-position: 0 40%;
+    }
+    50% {
+        background-position: 100% 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .title-ong h1 {
+        font-size: 2em;
+    }
+}

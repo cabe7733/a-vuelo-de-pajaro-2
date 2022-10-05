@@ -1,0 +1,39 @@
+<section class="row" style="background-color: #1DD2B1;color:white;">
+    <div class="col-xl-3 col-12 d-flex align-items-center justify-content-center my-5">
+        <div class="mx-5 d-flex justify-content-center align-items-center flex-column my-5">
+            <h2>ONG</h2>
+            <h3 class="h1 text-center text-uppercase fw-bold w-75">
+                A Vuelo de Pájaro
+                <hr>
+            </h3>
+        </div>
+    </div>
+    <div class="col-xl-5 col-12 my-5">
+        <P class="my-5">
+            A vuelo de pájaro es una organización social nacida en el año 2017 en el municipio de Apía Risaralda, constituida legalmente como entidad sin ánimo de lucro en el año 2020. Promovemos la conservación ambiental y el desarrollo sostenible, involucrando
+            las comunidades con una perspectiva pedagógica. Impartimos educación ambiental a niños, niñas, jóvenes y adultos bajo estrategias que involucran al colectivo, en los procesos de conservación. Desarrollamos proyectos que aportan a la economía
+            circular dentro de las localidades de influencia.
+        </P>
+    </div>
+</section>
+
+
+<!-- SECCION ALIADOS -->
+<section class="row mt-5">
+    <div class="col-xl-3 col-12 d-flex align-items-center justify-content-center">
+        <div class="mx-5 d-flex justify-content-center">
+            <h3 class="h1 text-center text-uppercase fw-bold w-50">
+                Nuestros Aliados
+                <hr>
+            </h3>
+        </div>
+    </div>
+    <div class="col-xl-9 col-12">
+        <div class="row" *ngIf="imgPatrocinadores">
+            <div *ngFor="let item of imgPatrocinadores" class="col-xl-3 col-4 my-2">
+                <img [src]="item.urlimage" [alt]="item.name" class="w-50">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FIN SECCION ALIADOS -->
