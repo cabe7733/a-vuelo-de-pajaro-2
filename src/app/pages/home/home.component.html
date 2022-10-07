@@ -1,6 +1,6 @@
-<section class="row" style="background-color: #1DD2B1;color:white;">
-    <div class="col-xl-3 col-12 d-flex align-items-center justify-content-center my-5">
-        <div class="mx-5 d-flex justify-content-center align-items-center flex-column my-5">
+<section class="row section-1">
+    <div class="col-xl-4 col-md-3 col-12 d-flex align-items-center justify-content-center">
+        <div class="mx-5 d-flex justify-content-center align-items-center flex-column">
             <h2>ONG</h2>
             <h3 class="h1 text-center text-uppercase fw-bold w-75">
                 A Vuelo de Pájaro
@@ -8,8 +8,19 @@
             </h3>
         </div>
     </div>
-    <div class="col-xl-5 col-12 my-5">
-        <P class="my-5">
+    <div class="col-xl-4 col-md-6 col-12">
+        <mdb-carousel [controls]="true" [indicators]="true" [animation]="'fade'" *ngIf="imagesGeneral.length">
+            <mdb-carousel-item *ngFor="let item of imagesGeneral">
+                <img [src]="item.urlimage" class="d-block w-100 " [alt]="item.name" height="350px" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Unete a la Red</h5>
+                    <p>¡Pidele Perdón al Planeta!</p>
+                </div>
+            </mdb-carousel-item>>
+        </mdb-carousel>
+    </div>
+    <div class="col-xl-4 col-md-3 col-12">
+        <P class="px-3 py-5">
             A vuelo de pájaro es una organización social nacida en el año 2017 en el municipio de Apía Risaralda, constituida legalmente como entidad sin ánimo de lucro en el año 2020. Promovemos la conservación ambiental y el desarrollo sostenible, involucrando
             las comunidades con una perspectiva pedagógica. Impartimos educación ambiental a niños, niñas, jóvenes y adultos bajo estrategias que involucran al colectivo, en los procesos de conservación. Desarrollamos proyectos que aportan a la economía
             circular dentro de las localidades de influencia.
@@ -29,11 +40,48 @@
         </div>
     </div>
     <div class="col-xl-9 col-12">
-        <div class="row" *ngIf="imgPatrocinadores">
-            <div *ngFor="let item of imgPatrocinadores" class="col-xl-3 col-4 my-2">
+        <div class="row" *ngIf="imgAliados">
+            <div *ngFor="let item of imgAliados" class="col-xl-3 col-6 my-2">
                 <img [src]="item.urlimage" [alt]="item.name" class="w-50">
             </div>
         </div>
     </div>
 </section>
 <!-- FIN SECCION ALIADOS -->
+
+
+<section class="row mt-5 section-3">
+    <div class="col-xl-3 col-12 d-flex align-items-center justify-content-center">
+        <div class="mx-5 d-flex justify-content-center">
+            <h3 class="h1 text-center text-uppercase fw-bold w-50">
+                Preguntas Frecuentes
+                <hr>
+            </h3>
+        </div>
+    </div>
+    <div class="col-xl-9 col-12 my-5 px-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row mb-3">
+                    <div class="col-md-11 col-10">
+                        <h5 class="font-weight-bold mb-3">¿Cuál es nuestra prioridad?</h5>
+                        <p class="grey-text">Formar individuos conscientes de las riquezas naturales de su entorno para fortalecer el sentido de pertenencia y la gobernanza en sus comunidades.</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-11 col-10">
+                        <h5 class="font-weight-bold mb-3">¿Qué papel juegan los niños en nuestras comunidades?</h5>
+                        <p class="grey-text">Su formación integral es fundamental; fortalecemos sus capacidades de liderazgo y comunicación asertiva en procura de generaciones más sensibles con su entorno.</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-11 col-10">
+                        <h5 class="font-weight-bold mb-3">¿Por qué es importante favorecer la economía circular?</h5>
+                        <p class="grey-text">El clásico sistema de extracción de recursos de la naturaleza, transformación, producción, venta y eliminación de los productos consumidos NO es sostenible. Queremos hacer parte de la transición a una economía circular y a la adopción
+                            de prácticas comola reutilización, la reparación o el reciclaje; porque cada uno de nosotros tiene la responsabilidad de aportar su granito de arena para proteger nuestro planeta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -8,18 +8,27 @@ import { BucketService } from 'src/app/services/bucket.service';
 })
 export class HomeComponent implements OnInit {
 
-  public imgPatrocinadores:any;
+  public imgAliados:any;
+  public imagesGeneral:any;
 
   constructor(private BucketService:BucketService) { }
 
   ngOnInit(): void {
-    this.padrocinadores();
+    this.aliados();
+    this.imgGeneral();
   }
 
-  padrocinadores(){
+  aliados(){
     let url="logos";
     this.BucketService.imagenes(url).then(data=>{
-      this.imgPatrocinadores = data;
+      this.imgAliados = data;
+    });
+  }
+
+  imgGeneral(){
+    let url="Img";
+    this.BucketService.imagenes(url).then(data=>{
+      this.imagesGeneral = data;
     });
   }
 

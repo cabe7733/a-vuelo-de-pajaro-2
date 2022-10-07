@@ -4,7 +4,7 @@
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="../../../assets/img/logo-removebg-preview.png" class="me-2" height="40" alt="" loading="lazy" />
-                <strong>A vuelo de pajaro </strong>
+                <strong>A vuelo de Pájaro </strong>
             </a>
             <!-- Toggle button -->
             <button class="navbar-toggler" type="button" (click)="rightAligned.toggle()" aria-controls="navbarRightAlignExample" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,24 +14,21 @@
             <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse" id="navbarRightAlignExample" mdbCollapse #rightAligned="mdbCollapse">
                 <!-- Left links -->
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" routerLinkActive="activetwo" [routerLink]="'home'">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" routerLinkActive="activetwo" [routerLink]="'nosotros'">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" routerLinkActive="activetwo" [routerLink]="'contact'">Contacta</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" routerLinkActive="activetwo" [routerLink]="'blog'">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" routerLinkActive="activetwo" [routerLink]="'proyect'">Proyectos</a>
                     </li>
                 </ul>
                 <!-- Left links -->
@@ -49,13 +46,13 @@
             <div class="d-flex justify-content-evenly align-items-center h-100">
                 <div class="text-white d-flex flex-column align-items-center title-ong">
                     <h1 class="w-25">ONG</h1>
-                    <h1 class="">A Vuelo De Pajaro</h1>
+                    <h1 class="">A Vuelo De Pájaro</h1>
                 </div>
             </div>
         </div>
     </div>
-    <div class="d-flex align-items-center justify-content-center card-description">
-        <div class="w-75 shadow-5 text-center bg-light rounded-7">
+    <div class="d-flex align-items-center justify-content-center" style="background-color:#1DD2B1 ;">
+        <div class="shadow-5 text-center bg-light rounded-7 card-description">
             <img src="../../../assets/img/logo-removebg-preview.png" class="mt-5" height="50px" alt="">
             <p class="px-5 py-5">
                 A vuelo de pájaro es una organización social nacida en el año 2017 en el municipio de Apía Risaralda, constituida legalmente como entidad sin ánimo de lucro en el año 2020. Promovemos la conservación ambiental y el desarrollo sostenible, involucrando
